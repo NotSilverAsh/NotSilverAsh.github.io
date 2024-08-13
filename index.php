@@ -1,3 +1,4 @@
+<?php $userIP = $_SERVER['REMOTE_ADDR']; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,7 @@
 <body>
     <div class="container">
         <p>There is nothing here.. Get out before your ipV4 get save..</p>
+        <p>U failed to close this.. <?php echo "IP Address: ${userIP}"?></p>
     </div>
 </body>
 </html>
