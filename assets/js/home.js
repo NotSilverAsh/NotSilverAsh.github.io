@@ -1,1 +1,1 @@
-console.log(location.host)
+document.addEventListener('DOMContentLoaded', console.log(location.hostname))
