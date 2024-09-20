@@ -22,7 +22,7 @@ async function postRequest() {
         });
 
         const result = await response.json(); // Parse JSON Response
-        console.log(result)
+        document.getElementById("response").textContent = JSON.stringify(result, null, 2);
      } catch (error) {
         console.error(error)
      }

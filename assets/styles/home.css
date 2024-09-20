@@ -22,7 +22,16 @@ body {
   color: crimson;
 }
 
+.menu {
+  position: relative;
+  bottom: -10px;
+}
+
 li a{
   color: green;
   text-decoration: none;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
 }
