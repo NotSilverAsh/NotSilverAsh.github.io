@@ -3,7 +3,8 @@
 // UID //
 const uid = () => {
     const head = Date.now().toString(36);
-    return head
+    const randomID = Math.random(head).toString(36).substring(2);
+    return randomID
 };
 
 // POST METHOD FUNCTION //
