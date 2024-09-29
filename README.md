@@ -1,4 +1,4 @@
-# I added some shit in here, why would I need it anyway?? 👽
+# why would I need it anyway?? 👽
 
 Now enough of this shit. :alien:
 
