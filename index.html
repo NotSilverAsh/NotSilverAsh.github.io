@@ -8,33 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/styles/home.css">
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="shortcut icon" href="assets/img/icon/favicon.jpg" type="image/x-icon">
     <title>Sharky | Welcome On Board!</title>
 </head>
 
 <body>
-    <div class="request">
-        <p id="ipv4"></p>
-        <p id="country"></p>
-        <p id="region"></p>
-        <p id="timezone"></p>
-        <p id="location"></p>
+
+    <!-- Splash Screen -->
+    <div id="splash">
+        <div class="logo">Sharky | I dont care</div>
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="file-names">
+            <p id="loading-file">Loading</p>
+        </div>
     </div>
-    <br>
-    <p>I know where you lived now "rip_jeng" from roblox. I will make sure that your life is like a living hell, I will
-        get you.</p>
-    <p>I'm coming for you. Mark my words, I will make sure that you will regret living. I'm gonna make you cry <strong
-            style="color: red;">blood</strong>. I will get you.</p>
-    <strong style="color: red;">I'M COMING FOR YOU</strong>
-    <div class="menu">
-        <li><a href="/global/docs/">Docs</a></li>
-        <a class="email" href="mailto:contact@sharkybytes.xyz">Got something to suggest?</a>
+
+    <!-- Welcome MSG -->
+    <div id="welcome-message" class="hidden">
+        <h2 id="welcome-text"></h2>
     </div>
-    <br>
-    <p>Posted JSON Data:</p>
-    <pre id="response"></pre>
-    <script src="assets/js/home.js"></script>
+
+    <script src="assets/js/splash.js"></script>
     <script src="assets/js/dataCollect.js"></script>
 </body>
 

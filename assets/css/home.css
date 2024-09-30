@@ -1,0 +1,106 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Disable scrolling initially */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Custom selection color */
+::selection {
+  background-color: plum; /* Change this to your desired background color */
+  color: #ffffff;            /* Change this to your desired text color */
+}
+
+/* For Firefox support */
+::-moz-selection {
+  background-color: #4caf50; /* Change this to your desired background color */
+  color: #ffffff;            /* Change this to your desired text color */
+}
+
+
+/* Hide scrollbars in Webkit browsers */
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbars in Chrome, Safari, and Edge */
+}
+
+/* Splash Screen Styles */
+#splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #161616, #fff);
+  position: absolute; /* Make position absolute */
+  width: 100%; /* Ensure it takes full width */
+  transition: opacity 2s ease;
+  z-index: 2; /* Keep splash screen on top */
+  user-select: none;
+}
+
+.logo {
+  font-size: 4vw; /* Responsive font size */
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3vh; /* Responsive margin */
+}
+
+/* Loading Bar Container */
+.loading-bar-container {
+  width: 40%;
+  max-width: 600px; /* Maximum width for larger screens */
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.loading-bar {
+  height: 100%;
+  width: 0;
+  background-color: white;
+  border-radius: 5px;
+  animation: load 20s forwards;
+}
+
+/* File names below the loading bar */
+.file-names {
+  font-weight: 600;
+  margin-top: 2vh; /* Responsive margin */
+  color: white;
+  font-size: 2vw; /* Responsive font size */
+  text-align: center; /* Center the text */
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Main Content Styles */
+#welcome-message {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  text-align: center;
+  padding: 20px;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Position relative for stacking context */
+  z-index: 1; /* Below splash screen */
+  opacity: 1; /* Initially, the main content will be invisible */
+}
+
+.hidden {
+  display: none; /* Hides the main content initially */
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}

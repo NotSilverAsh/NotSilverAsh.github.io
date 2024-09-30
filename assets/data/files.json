@@ -1,0 +1,22 @@
+{
+    "files": [
+      "assets/img/etc/",
+      "assets/img/icon/favicon.png",
+      "assets/js/main.js",
+      "assets/js/homepage.js",
+      "assets/css/styles.css",
+      "data/config.json",
+      "data/profiles.json",
+      "data/personal-data.json",
+      "assets/img/not-found/image1.jpg",
+      "assets/img/not-found/image2.png",
+      "assets/js/profile-load.js",
+      "pages/about-profile/profile.html",
+      "data/profiles-data.json",
+      "pages/docs/documentaries.html",
+      "assets/css/global.css",
+      "data/u3j8sk3.json",
+      "data/profiles-data.json",
+      "assets/audio/background-track.mp3"
+    ]
+  }
